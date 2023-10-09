@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather JS App</title>
+</head>
+<body>
+  <div class="container">
+   <div class="conditions-container">
+    <h1 class="location" id="location"></h1>
+    <h2 class="sky" id="sky-conditions"></h3>
+    <h2 class="temp" id="temperature"></h3>
+   </div>
+   <div class="details-container">
+    <p class="humidity" id="humidity"></p>
+    <p id="feels-like"></p>
+    <p id="pressure"></p>
+    <p class="wind" id="wind"></p>
+   </div>
+   <div class="change-location">
+
+    <button class="change-button" id="change-button">Change Location</button>
+   </div>
+   <div class="modal-fixed" id="modal-fixed">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Choose Location</h1>
+        <img src="icons8-close-30.png" alt="" class="image" id="image-close">
+      </div>
+      <div class="modal-details-container">
+       <div class="modal-details">
+        <p class="city-text">City</p>
+        <input type="text" class="city" id="city-text">
+        <p class="country-text">Country</p>
+        <input type="text" class="country" id="country-text">
+       </div>
+      </div>
+      <div class="modal-button-container">
+        <div class="modal-buttons">
+          <button class="close" id="close">Cancel</button>
+          <button class="save" id="save">Save Changes</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+   <script src="weather.js"></script>
+   <script src="ui.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>

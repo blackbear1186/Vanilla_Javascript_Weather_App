@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font: arial, sans-serif;
+  color: rgb(37, 120, 156);
+}
+.container {
+  width: 50%;
+  height: 500px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(228, 228, 215);
+  border-radius: 1em;
+}
+
+.conditions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 1em;
+}
+
+
+.details-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(99, 193, 234);
+  border-radius: .5em;
+  gap: 1em;
+  background: white
+}
+.humidity {
+  margin-top: 1em;
+}
+.wind {
+  margin-bottom: 1em;
+}
+.change-location {
+  border-top: 1px solid rgb(99, 193, 234);
+  margin-top: 3em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.change-button {
+  margin-top: 3em;
+  width: 10em;
+  height: 2.5em;
+  border-radius: .2em;
+  border: 1px solid rgb(99, 193, 234);
+  background-color: rgb(99, 193, 234);
+  border-style: hidden;
+  cursor: pointer;
+  color: white;
+}
+.change-button:hover {
+  background-color: rgb(62, 177, 226);
+  border: 1px solid rgb(44, 169, 222);
+}
+
+.modal-fixed {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100%;
+  padding-top: 100px;
+  overflow: auto;
+}
+.modal-container {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1em;
+}
+.modal-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  cursor: pointer;
+}
+.modal-details-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.city {
+  height: 3em;
+  border-radius: .5em;
+  border: 1px solid black;
+
+}
+.city-text {
+  font-size: 20px;
+}
+.country {
+  height: 3em;
+  border-radius: .5em;
+  border: 1px solid black;
+}
+.country-text {
+  font-size: 20px;
+
+}
+
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.modal-buttons {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+}
+.close {
+  width: 5em;
+  height: 2em;
+  border-radius: .5em;
+  border-style: hidden;
+  cursor: pointer;
+  background: rgb(237, 226, 226);
+}
+.close:hover {
+  background: rgb(245, 218, 218);
+  border: 1px solid rgb(217, 209, 209);
+}
+.save {
+  width: 10em;
+  height: 2em;
+  border-radius: .5em;
+  border-style: hidden;
+  cursor: pointer;
+  background: rgb(29, 163, 221);
+  color: white;
+}
+.save:hover {
+  background: rgb(45, 172, 226);
+  border: 1px solid rgb(51, 156, 201);
+}
